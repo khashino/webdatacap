@@ -2,6 +2,19 @@
 
 webdatacap is a flesk application based on python for getting users data
 
+#### [Github](https://github.com/khashino/webdatacap)
+#### [Docker](https://hub.docker.com/r/khashi1377/webdatacap)
+
+## docker
+first pull project
+```
+docker pull khashi1377/webdatacap
+```
+then just run 
+```
+docker run -d  --name webdatacap -p 80:80 khashi1377/webdatacap 
+```
+
 ## Installation
 
 Use the git to clone project.
@@ -15,8 +28,6 @@ install dependencies.
 ```pip
 pip3 install -r requirements.txt
 ```
-
-
 ## Usage
 
 #### run
