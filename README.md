@@ -14,6 +14,14 @@ then just run
 ```
 docker run -d  --name webdatacap -p 80:80 khashi1377/webdatacap 
 ```
+if you get any error use tag
+```
+docker pull khashi1377/webdatacap:v1.0.0
+```
+```
+docker run -d  --name webdatacap -p 80:80 khashi1377/webdatacap:v1.0.0
+```
+
 
 ## Installation
 
