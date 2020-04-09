@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download {{ filename }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.dl {
+  margin: auto;
+  width: 60%;
+  padding: 250px 30px 30px 30px;
+  width: 400px;
+}
+span {
+font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+font-size: 14px;
+margin-top: .5em; color: #666;
+text-align: left;
+color: #eff2f5;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #a0b3c5;
+  padding: 5px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #a0b3c5;
+   color: white;
+   text-align: center;
+   padding: 18px;
+}
+
+</style>
+</head>
+<body style="background-color:#5b7895">
+
+<div class="header">
+  <a href="#default" class="logo">Free Downloader</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+
+<div class="dl">
+
+    <h2 style="color: #ff80df;">Successful</h2>
+    </br>
+    <span>Congrats </span> <span style="color: #ff80df;">{{ name }}</span> <span> Signup Complete</span>
+    </br>
+    <span>Download Link Sent to </span> <span style="color: #ff80df;">{{ mail }}</span>
+
+</div>
+
+
+
+<div class="footer">
+  © 2020 Copyright:
+    <a href="#FreeDownloader" style="text-decoration:none;font-family: 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, Verdana, sans-serif;"> FreeDownloader</a>
+</div>
+
+
+</body>
+</html>

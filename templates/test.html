@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script></head>
+<body>
+
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+
+<script>
+var x = document.getElementById("demo");
+
+function postmethod(x) {
+   x.innerHTML = "loading";
+   $.post('/postmethod',{post: x});
+   x.innerHTML = "Done";
+}
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+    postmethod(position.coords.latitude +
+    ", " + position.coords.longitude);
+}
+</script>
+
+</body>
+</html>
